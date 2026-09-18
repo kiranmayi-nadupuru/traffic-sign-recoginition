@@ -131,15 +131,14 @@ The model was evaluated on the test dataset containing 12,630 images.
 | Macro Average F1-score | 0.8624 |
 | Weighted Average F1-score | 0.9194 |
 
-
-### Model Accuracy
+## Accuracy
 
 ![Model Accuracy](images/training-results.png)
 
-### Confusion Matrix
+## Confusion Matrix
 
 ![Confusion Matrix](images/confusion-matrix.png)
 
-### Prediction Output
+## Prediction
 
 ![Prediction Output](images/prediction.png)
