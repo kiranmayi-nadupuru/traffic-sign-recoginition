@@ -74,6 +74,7 @@ base_model = EfficientNetB0(
 )
 
 base_model.trainable = False
+```
 
 ---
 ##  EfficientNetB0 Configuration
