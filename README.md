@@ -76,7 +76,7 @@ base_model = EfficientNetB0(
 base_model.trainable = False
 
 ---
-EfficientNetB0 Configuration
+##  EfficientNetB0 Configuration
 Component	Description
 Architecture	EfficientNetB0
 Pretrained Weights	ImageNet
@@ -91,7 +91,7 @@ The pretrained EfficientNetB0 is used as the feature extraction backbone for tra
 
 ---
 
-🔄 Transfer Learning
+## 🔄 Transfer Learning
 
 Transfer learning is the main technique used in this project.
 
@@ -103,7 +103,7 @@ base_model.trainable = False
 
 This allows the pretrained EfficientNetB0 network to act as a feature extractor while the model is adapted for the traffic sign classification task.
 
-Why EfficientNetB0?
+## Why EfficientNetB0?
 
 EfficientNetB0 provides a balance between:
 
@@ -116,7 +116,7 @@ This makes EfficientNetB0 suitable for image classification tasks such as traffi
 
 ---
 
-📈 Model Evaluation
+## 📈 Model Evaluation
 
 The trained model was evaluated using the test dataset containing 12,630 images.
 
@@ -131,7 +131,7 @@ The model achieved a test accuracy of 92.03% on the GTSRB test dataset.
 
 ---
 
-📸 Results
+
 ### Model Accuracy
 
 ![Model Accuracy](accuracy.png)
@@ -146,7 +146,7 @@ The model achieved a test accuracy of 92.03% on the GTSRB test dataset.
 
 ---
 
-🛠️ Technologies Used
+## 🛠️ Technologies Used
 Python
 TensorFlow
 Keras
