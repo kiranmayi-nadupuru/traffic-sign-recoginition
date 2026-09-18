@@ -74,3 +74,99 @@ base_model = EfficientNetB0(
 )
 
 base_model.trainable = False
+
+---
+EfficientNetB0 Configuration
+Component	Description
+Architecture	EfficientNetB0
+Pretrained Weights	ImageNet
+Include Top	False
+Input Format	RGB
+Input Shape	(IMG_SIZE, IMG_SIZE, 3)
+Transfer Learning	Yes
+Base Model	Initially Frozen
+Number of Classes	43
+
+The pretrained EfficientNetB0 is used as the feature extraction backbone for traffic sign classification.
+
+---
+
+🔄 Transfer Learning
+
+Transfer learning is the main technique used in this project.
+
+Instead of training a deep convolutional neural network completely from scratch, the project uses the features learned by EfficientNetB0 from the ImageNet dataset.
+
+The EfficientNetB0 base model is initially frozen:
+
+base_model.trainable = False
+
+This allows the pretrained EfficientNetB0 network to act as a feature extractor while the model is adapted for the traffic sign classification task.
+
+Why EfficientNetB0?
+
+EfficientNetB0 provides a balance between:
+
+Model performance
+Computational efficiency
+Model size
+Training requirements
+
+This makes EfficientNetB0 suitable for image classification tasks such as traffic sign recognition.
+
+---
+
+📈 Model Evaluation
+
+The trained model was evaluated using the test dataset containing 12,630 images.
+
+Test Results
+Metric	Result
+Test Loss	0.3518
+Test Accuracy	92.03%
+Macro Average F1-score	0.8624
+Weighted Average F1-score	0.9194
+
+The model achieved a test accuracy of 92.03% on the GTSRB test dataset.
+
+---
+
+📸 Results
+### Model Accuracy
+
+![Model Accuracy](accuracy.png)
+
+### Confusion Matrix
+
+![Confusion Matrix](confusion_matrix.png)
+
+### Prediction Output
+
+![Prediction Output](prediction.png)
+
+---
+
+🛠️ Technologies Used
+Python
+TensorFlow
+Keras
+EfficientNetB0
+NumPy
+Pandas
+Matplotlib
+Scikit-learn
+Google Colab
+Jupyter Notebook
+
+---
+
+📂 Project Structure
+traffic-sign-recoginition/
+│
+├── Traffic_Sign_Recoginition.ipynb
+├── README.md
+├── requirements.txt
+├── .gitignore
+├── accuracy.png
+├── confusion_matrix.png
+└── prediction.png
