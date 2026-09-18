@@ -1,4 +1,3 @@
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kiranmayi-nadupuru/traffic-sign-recognition/blob/main/Traffic_Sign_Recoginition.ipynb)
 
 
 # Traffic Sign Recognition
