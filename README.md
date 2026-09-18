@@ -16,7 +16,7 @@ The project was developed and tested using **Google Colab** with **TensorFlow/Ke
 - Preprocess traffic sign images for model training.
 - Build and train a CNN-based image classification model.
 - Evaluate the model using test data.
-- Predict the class of previously unseen traffic sign images.
+- Predict previously unseen traffic sign images.
 
 ---
 
@@ -71,7 +71,7 @@ The project uses a Convolutional Neural Network (CNN) inspired by the LeNet-styl
 | Fully Connected | Input = 84, Output = 43 |
 | Softmax | Output layer |
 
-The final output layer contains **43 classes**, corresponding to the 43 traffic sign categories in the dataset.
+The final output layer contains **43 classes**, corresponding to the traffic sign categories in the dataset.
 
 ---
 
@@ -89,6 +89,22 @@ The trained model was evaluated using the test dataset containing **12,630 image
 | Weighted Average F1-score | 0.9194 |
 
 The model achieved a **test accuracy of 92.03%** on the GTSRB test dataset.
+
+---
+
+## 📸 Results
+
+### Model Accuracy
+
+![Model Accuracy](accuracy.png)
+
+### Confusion Matrix
+
+![Confusion Matrix](confusion_matrix.png)
+
+### Prediction Output
+
+![Prediction Output](prediction.png)
 
 ---
 
@@ -115,30 +131,6 @@ traffic-sign-recognition/
 ├── README.md
 ├── requirements.txt
 ├── .gitignore
-│
-└── images/
-    ├── training-results.png
-    ├── confusion-matrix.png
-    └── prediction.png
-## Results
-
-The model was evaluated on the test dataset containing 12,630 images.
-
-| Metric | Result |
-|---|---:|
-| Test Loss | 0.3518 |
-| Test Accuracy | **92.03%** |
-| Macro Average F1-score | 0.8624 |
-| Weighted Average F1-score | 0.9194 |
-
-## Accuracy
-
-![Model Accuracy](images/training-results.png)
-
-## Confusion Matrix
-
-![Confusion Matrix](images/confusion-matrix.png)
-
-## Prediction
-
-![Prediction Output](images/prediction.png)
+├── accuracy.png
+├── confusion_matrix.png
+└── prediction.png
