@@ -56,24 +56,20 @@ The preprocessing steps include:
 
 ## 🧠 Model Architecture
 
-The project uses a Convolutional Neural Network (CNN) inspired by the LeNet-style architecture.
+The project uses **EfficientNetB0** as the main deep learning architecture for traffic sign classification.
 
-| Layer | Description |
-|---|---|
-| Input | 32 × 32 × 1 grayscale image |
-| Convolution | 5 × 5 kernel, output 28 × 28 × 6 |
-| ReLU | Activation function |
-| Max Pooling | 2 × 2 pooling |
-| Convolution | 5 × 5 kernel, output 10 × 10 × 16 |
-| ReLU | Activation function |
-| Max Pooling | 2 × 2 pooling |
-| Fully Connected | Input = 400, Output = 120 |
-| Fully Connected | Input = 120, Output = 84 |
-| Dropout | Regularization |
-| Fully Connected | Input = 84, Output = 43 |
-| Softmax | Output layer |
+EfficientNetB0 is a convolutional neural network pretrained on the **ImageNet** dataset. Transfer learning is used to take advantage of the features learned from ImageNet and adapt them to the traffic sign classification task.
 
-The final output layer contains **43 classes**, corresponding to the traffic sign categories in the dataset.
+The EfficientNetB0 base model is loaded using TensorFlow/Keras:
+
+```python
+base_model = EfficientNetB0(
+    weights="imagenet",
+    include_top=False,
+    input_shape=(IMG_SIZE, IMG_SIZE, 3)
+)
+
+base_model.trainable = False
 
 ---
 
