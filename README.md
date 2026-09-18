@@ -75,62 +75,61 @@ base_model = EfficientNetB0(
 
 base_model.trainable = False
 ```
-
 ---
-##  EfficientNetB0 Configuration
-Component	Description
-Architecture	EfficientNetB0
-Pretrained Weights	ImageNet
-Include Top	False
-Input Format	RGB
-Input Shape	(IMG_SIZE, IMG_SIZE, 3)
-Transfer Learning	Yes
-Base Model	Initially Frozen
-Number of Classes	43
 
-The pretrained EfficientNetB0 is used as the feature extraction backbone for traffic sign classification.
+## 🧠 EfficientNetB0 Configuration
+
+- **Architecture:** EfficientNetB0
+- **Pretrained Weights:** ImageNet
+- **Include Top:** False
+- **Input Format:** RGB
+- **Input Shape:** `(IMG_SIZE, IMG_SIZE, 3)`
+- **Transfer Learning:** Yes
+- **Base Model:** Initially Frozen
+- **Number of Classes:** 43
+
+The pretrained **EfficientNetB0** is used as the feature extraction backbone for traffic sign classification.
 
 ---
 
 ## 🔄 Transfer Learning
 
-Transfer learning is the main technique used in this project.
+- **Technique:** Transfer Learning
+- **Pretrained Model:** EfficientNetB0
+- **Pretrained Dataset:** ImageNet
+- **Base Model:** Initially frozen
+- **Purpose:** Use pretrained visual features for traffic sign classification
+- **Classification Task:** 43-class traffic sign recognition
 
-Instead of training a deep convolutional neural network completely from scratch, the project uses the features learned by EfficientNetB0 from the ImageNet dataset.
+The EfficientNetB0 base model is initially frozen so that its pretrained features can be used as a feature extractor for the traffic sign classification task.
 
-The EfficientNetB0 base model is initially frozen:
+---
 
-base_model.trainable = False
+## 🤔 Why EfficientNetB0?
 
-This allows the pretrained EfficientNetB0 network to act as a feature extractor while the model is adapted for the traffic sign classification task.
+EfficientNetB0 was selected for this project because it provides a good balance between:
 
-## Why EfficientNetB0?
+- **Model Performance:** Provides strong performance for image classification.
+- **Computational Efficiency:** Requires fewer computational resources compared with larger models.
+- **Model Size:** EfficientNetB0 is relatively lightweight and suitable for practical applications.
+- **Training Requirements:** Suitable for transfer learning and can be trained efficiently using pretrained ImageNet weights.
 
-EfficientNetB0 provides a balance between:
-
-Model performance
-Computational efficiency
-Model size
-Training requirements
-
-This makes EfficientNetB0 suitable for image classification tasks such as traffic sign recognition.
+This makes **EfficientNetB0** suitable for image classification tasks such as traffic sign recognition.
 
 ---
 
 ## 📈 Model Evaluation
 
-The trained model was evaluated using the test dataset containing 12,630 images.
+The trained model was evaluated using the test dataset containing **12,630 images**.
 
-Test Results
-Metric	Result
-Test Loss	0.3518
-Test Accuracy	92.03%
-Macro Average F1-score	0.8624
-Weighted Average F1-score	0.9194
+### 📊 Test Results
 
-The model achieved a test accuracy of 92.03% on the GTSRB test dataset.
+- **Test Loss:** 0.3518
+- **Test Accuracy:** **92.03%**
+- **Macro Average F1-score:** 0.8624
+- **Weighted Average F1-score:** 0.9194
 
----
+The model achieved a **test accuracy of 92.03%** on the GTSRB test dataset.
 
 ### Model Accuracy
 
@@ -162,13 +161,13 @@ The model achieved a test accuracy of 92.03% on the GTSRB test dataset.
 
 ## 📂 Project Structure
 
-text
-traffic-sign-recognition/
+```text
+traffic-sign-recoginition/
 │
-├── Traffic_Sign_Recognition.ipynb
-├── README.md
-├── requirements.txt
-├── .gitignore
-├── accuracy.png
-├── confusion_matrix.png
-└── prediction.png
+├── 📓 Traffic_Sign_Recoginition.ipynb
+├── 📄 README.md
+├── 📄 requirements.txt
+├── 📄 .gitignore
+├── 🖼️ accuracy.png
+├── 🖼️ confusion_matrix.png
+└── 🖼️ prediction.png
