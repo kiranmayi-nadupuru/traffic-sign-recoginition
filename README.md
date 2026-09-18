@@ -131,7 +131,6 @@ The model achieved a test accuracy of 92.03% on the GTSRB test dataset.
 
 ---
 
-
 ### Model Accuracy
 
 ![Model Accuracy](accuracy.png)
@@ -147,23 +146,25 @@ The model achieved a test accuracy of 92.03% on the GTSRB test dataset.
 ---
 
 ## 🛠️ Technologies Used
-Python
-TensorFlow
-Keras
-EfficientNetB0
-NumPy
-Pandas
-Matplotlib
-Scikit-learn
-Google Colab
-Jupyter Notebook
+
+- Python
+- TensorFlow
+- Keras
+- NumPy
+- Pandas
+- Matplotlib
+- Scikit-learn
+- Google Colab
+- Jupyter Notebook
 
 ---
 
-📂 Project Structure
-traffic-sign-recoginition/
+## 📂 Project Structure
+
+text
+traffic-sign-recognition/
 │
-├── Traffic_Sign_Recoginition.ipynb
+├── Traffic_Sign_Recognition.ipynb
 ├── README.md
 ├── requirements.txt
 ├── .gitignore
