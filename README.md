@@ -120,3 +120,25 @@ traffic-sign-recognition/
     ├── training-results.png
     ├── confusion-matrix.png
     └── prediction.png
+## Results
+
+The model was evaluated on the test dataset containing 12,630 images.
+
+| Metric | Result |
+|---|---:|
+| Test Loss | 0.3518 |
+| Test Accuracy | **92.03%** |
+| Macro Average F1-score | 0.8624 |
+| Weighted Average F1-score | 0.9194 |
+
+### Model Accuracy
+
+![Model Accuracy](accuracy.png)
+
+### Confusion Matrix
+
+![Confusion Matrix](confusion_matrix.png)
+
+### Prediction Output
+
+![Prediction Output](prediction.png)
