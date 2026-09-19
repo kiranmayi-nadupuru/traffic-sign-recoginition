@@ -171,3 +171,18 @@ traffic-sign-recoginition/
 ├── 🖼️ accuracy.png
 ├── 🖼️ confusion_matrix.png
 └── 🖼️ prediction.png
+
+```
+---
+
+## 📌 Conclusion
+
+This project uses **ImageNet-pretrained EfficientNetB0** and transfer learning for traffic sign recognition on the **GTSRB dataset**. The model classifies **43 traffic sign classes** and achieved **92.03% test accuracy** with a **0.9194 weighted F1-score** on **12,630 test images**.
+
+---
+
+## 👩‍💻 Author
+
+**Kiranmayi Nadupuru**
+
+GitHub: [kiranmayi-nadupuru](https://github.com/kiranmayi-nadupuru)
